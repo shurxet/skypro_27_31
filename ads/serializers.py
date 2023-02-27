@@ -1,17 +1,7 @@
 from rest_framework import serializers
 
-<<<<<<< HEAD
-from ads.models import Ad, Location, User, Category
-
-
-class LocationSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Location
-        fields = '__all__'
-=======
 from ads.models import Ad, Category, Selection
 from authentication.models import User
->>>>>>> b7ed7a2 (first commit)
 
 
 class AdListSerializer(serializers.ModelSerializer):
@@ -32,31 +22,6 @@ class AdListSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-<<<<<<< HEAD
-class UserListSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ["username", "role"]
-
-
-class UserDetailSerializer(serializers.ModelSerializer):
-    location = serializers.SlugRelatedField(
-        many=True,
-        queryset=Location.objects.all(),
-        slug_field="name"
-    )
-
-    class Meta:
-        model = User
-        exclude = ["password"]
-
-
-class UserCreateSerializer(serializers.ModelSerializer):
-    location = serializers.SlugRelatedField(
-        required=False,
-        many=True,
-        queryset=Location.objects.all(),
-=======
 class AdDetailSerializer(serializers.ModelSerializer):
     author = serializers.SlugRelatedField(
         required=False,
@@ -67,62 +32,10 @@ class AdDetailSerializer(serializers.ModelSerializer):
     category = serializers.SlugRelatedField(
         required=False,
         queryset=Category.objects.all(),
->>>>>>> b7ed7a2 (first commit)
         slug_field="name"
     )
 
     class Meta:
-<<<<<<< HEAD
-        model = User
-        fields = "__all__"
-
-    def is_valid(self, *, raise_exception=False):
-        self._locations = self.initial_data.pop("location")
-        return super().is_valid(raise_exception=raise_exception)
-
-    def create(self, validated_data):
-        user = User.objects.create(**validated_data)
-
-        for location in self._locations:
-            location_obj, _ = Location.objects.get_or_create(name=location)
-            user.location.add(location_obj)
-        user.save()
-        return user
-
-
-class UserUpdateSerializer(serializers.ModelSerializer):
-    location = serializers.SlugRelatedField(
-        required=False,
-        many=True,
-        queryset=Location.objects.all(),
-        slug_field="name"
-    )
-
-    class Meta:
-        model = User
-        fields = "__all__"
-
-    def is_valid(self, raise_exception=False):
-        if "location" in self.initial_data:
-            self._locations = self.initial_data.pop("location")
-        else:
-            self._locations = []
-        return super().is_valid(raise_exception=raise_exception)
-
-    def save(self):
-        user = super().save()
-
-        for location in self._locations:
-            location_obj, _ = Location.objects.get_or_create(name=location)
-            user.location.add(location_obj)
-        user.save()
-        return user
-
-
-class UserDestroySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-=======
         model = Ad
         fields = "__all__"
 
@@ -189,5 +102,4 @@ class SelectionCreateUpdateSerializer(serializers.ModelSerializer):
 class SelectionDestroySerializer(serializers.ModelSerializer):
     class Meta:
         model = Selection
->>>>>>> b7ed7a2 (first commit)
         fields = ["id"]

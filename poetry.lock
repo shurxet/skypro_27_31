@@ -53,8 +53,6 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "djangorestframework-simplejwt"
 version = "5.2.2"
 description = "A minimal JSON Web Token authentication plugin for Django REST Framework"
@@ -80,7 +78,6 @@ python-jose = ["python-jose (==3.3.0)"]
 test = ["cryptography", "pytest", "pytest-cov", "pytest-django", "pytest-xdist", "tox"]
 
 [[package]]
->>>>>>> b7ed7a2 (first commit)
 name = "pillow"
 version = "9.4.0"
 description = "Python Imaging Library (Fork)"
@@ -253,8 +250,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
 name = "pyjwt"
 version = "2.6.0"
 description = "JSON Web Token implementation in Python"
@@ -273,7 +268,6 @@ docs = ["sphinx (>=4.5.0,<5.0.0)", "sphinx-rtd-theme", "zope.interface"]
 tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
->>>>>>> b7ed7a2 (first commit)
 name = "pytz"
 version = "2022.7.1"
 description = "World timezone definitions, modern and historical"
@@ -312,8 +306,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-<<<<<<< HEAD
-content-hash = "17cde1ed83e7f9e522aac203c4d03798812b7b826de728f4a6787891f6651b7b"
-=======
 content-hash = "918b4c6f0240558fa9faa437854e10837fbaa691187b3df2f923f5c84c3c6462"
->>>>>>> b7ed7a2 (first commit)

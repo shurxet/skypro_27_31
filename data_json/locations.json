@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 1,
         "fields": {
             "name": "Москва, м. Студенческая",
@@ -13,11 +9,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 2,
         "fields": {
             "name": "Москва, м. Черкизовская",
@@ -26,11 +18,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 3,
         "fields": {
             "name": "Санкт-Петербург, м. Невский проспект",
@@ -39,11 +27,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 4,
         "fields": {
             "name": "Москва, м. Библиотека имени Ленина",
@@ -52,11 +36,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 5,
         "fields": {
             "name": "Москва, м. Комсомольская",
@@ -65,11 +45,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 6,
         "fields": {
             "name": "Санкт-Петербург, м. Чернышевская",
@@ -78,11 +54,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 7,
         "fields": {
             "name": "Пушкин, Павловское шоссе 23/2",
@@ -91,11 +63,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 8,
         "fields": {
             "name": "Сакнт-Петербург, м. Балтийская",
@@ -104,11 +72,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 9,
         "fields": {
             "name": "Москва, м. Беломорская",
@@ -117,11 +81,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.location",
-=======
         "model": "authentication.location",
->>>>>>> b7ed7a2 (first commit)
         "pk": 10,
         "fields": {
             "name": "Москва, м. Электрозаодская",

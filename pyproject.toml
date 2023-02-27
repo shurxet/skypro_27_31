@@ -11,10 +11,7 @@ python = "^3.11"
 psycopg2-binary = "^2.9.5"
 pillow = "^9.4.0"
 djangorestframework = "^3.14.0"
-<<<<<<< HEAD
-=======
 djangorestframework-simplejwt = "^5.2.2"
->>>>>>> b7ed7a2 (first commit)
 
 
 [build-system]

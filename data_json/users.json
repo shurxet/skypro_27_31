@@ -1,10 +1,6 @@
 [
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 1,
         "fields": {
             "first_name": "Павел",
@@ -19,11 +15,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 2,
         "fields": {
             "first_name": "Альбина",
@@ -38,11 +30,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 3,
         "fields": {
             "first_name": "Иван",
@@ -57,11 +45,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 4,
         "fields": {
             "first_name": "Марина",
@@ -76,11 +60,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 5,
         "fields": {
             "first_name": "Галина",
@@ -95,11 +75,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 6,
         "fields": {
             "first_name": "Петр",
@@ -114,11 +90,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 7,
         "fields": {
             "first_name": "Никита",
@@ -133,11 +105,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 8,
         "fields": {
             "first_name": "Виолетта",
@@ -152,11 +120,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 9,
         "fields": {
             "first_name": "Гульнара",
@@ -171,11 +135,7 @@
         }
     },
     {
-<<<<<<< HEAD
-        "model": "ads.user",
-=======
         "model": "authentication.user",
->>>>>>> b7ed7a2 (first commit)
         "pk": 10,
         "fields": {
             "first_name": "Борис",
