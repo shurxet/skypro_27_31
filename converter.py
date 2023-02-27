@@ -76,8 +76,13 @@ class ConverterForHomework(DataPreparationBase):
 
 print(ConverterForHomework("data_csv/ad.csv", "data_json/ads.json").converter_csv_to_json("ads.ad"))
 print(ConverterForHomework("data_csv/category.csv", "data_json/categories.json").converter_csv_to_json("ads.category"))
+<<<<<<< HEAD
 print(ConverterForHomework("data_csv/location.csv", "data_json/locations.json").converter_csv_to_json("ads.location"))
 print(ConverterForHomework("data_csv/user.csv", "data_json/users.json").converter_csv_to_json("ads.user"))
+=======
+print(ConverterForHomework("data_csv/location.csv", "data_json/locations.json").converter_csv_to_json("authentication.location"))
+print(ConverterForHomework("data_csv/user.csv", "data_json/users.json").converter_csv_to_json("authentication.user"))
+>>>>>>> b7ed7a2 (first commit)
 
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.db import models
 
 
@@ -37,6 +38,12 @@ class User(models.Model):
 
     def __str__(self):
         return self.username
+=======
+from django.contrib.auth.models import AbstractUser
+from django.db import models
+
+from authentication.models import User
+>>>>>>> b7ed7a2 (first commit)
 
 
 class Category(models.Model):
@@ -68,5 +75,19 @@ class Ad(models.Model):
         return self.name
 
 
+<<<<<<< HEAD
 
 
+=======
+class Selection(models.Model):
+    name = models.CharField(max_length=100)
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    items = models.ManyToManyField(Ad)
+
+    class Meta:
+        verbose_name = "Подборка"
+        verbose_name_plural = "Подборки"
+
+    def __str__(self):
+        return self.name
+>>>>>>> b7ed7a2 (first commit)
