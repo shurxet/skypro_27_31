@@ -15,10 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -30,10 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,14 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-<<<<<<< HEAD
-    'ads',
-=======
     'rest_framework.authtoken',
     'authentication',
     'ads',
 
->>>>>>> b7ed7a2 (first commit)
 ]
 
 MIDDLEWARE = [
@@ -85,10 +73,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'skypro_home_work_27_31.wsgi.application'
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -103,10 +87,6 @@ DATABASES = {
     }
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -125,10 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -140,10 +116,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ed7a2 (first commit)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
@@ -163,9 +135,6 @@ TOTAL_ON_PAGE = 2
 REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
-<<<<<<< HEAD
-}
-=======
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework.authentication.TokenAuthentication",
         "rest_framework_simplejwt.authentication.JWTAuthentication"
@@ -173,4 +142,3 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'authentication.User'
->>>>>>> b7ed7a2 (first commit)
