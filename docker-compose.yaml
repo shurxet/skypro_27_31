@@ -1,8 +1,8 @@
 version: "3.9"
 services:
   api:
-#    build:
-#      context: .
+    build:
+      context: .
     image: shurxet/django_app
     ports:
     - 80:80
@@ -13,8 +13,8 @@ services:
         condition: service_completed_successfully
     command: python manage.py runserver 0.0.0.0:80
   migrations:
-#    build:
-#      context: .
+    build:
+      context: .
     image: shurxet/django_app
     depends_on:
       pg:
