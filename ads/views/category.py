@@ -1,5 +1,4 @@
 import json
-
 from django.http import JsonResponse
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
@@ -7,10 +6,9 @@ from django.views.generic import ListView, UpdateView, DeleteView
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import IsAuthenticated
-
 from ads.models import Category
-from ads.permissions import CategoryCreatePermission
-from ads.serializers import CategoryCreateSerializer
+from ads.permissions.permissions import CategoryCreatePermission
+from ads.serializers.category import CategoryCreateSerializer
 
 
 class CategoriesListView(ListView):
@@ -32,8 +30,8 @@ class CategoriesListView(ListView):
 
 @api_view(["GET"])
 @permission_classes([IsAuthenticated])
-def category_detail_Views(request, cat_id):
-    category = Category.objects.get(pk=cat_id)
+def category_detail_views(request, pk):
+    category = Category.objects.get(pk=pk)
 
     return JsonResponse({
         "id": category.id,

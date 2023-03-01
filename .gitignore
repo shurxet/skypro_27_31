@@ -1,5 +1,5 @@
 venv/
-#/pg_data
+/pg_data
 .idea/
 .*_cache/
 __pycache__
