@@ -1,59 +1,6 @@
 from rest_framework import serializers
-
-from ads.models import Ad, Category, Selection
-from authentication.models import User
-
-
-class AdListSerializer(serializers.ModelSerializer):
-    author = serializers.SlugRelatedField(
-        required=False,
-        queryset=User.objects.all(),
-        slug_field="username"
-    )
-
-    category = serializers.SlugRelatedField(
-        required=False,
-        queryset=Category.objects.all(),
-        slug_field="name"
-    )
-
-    class Meta:
-        model = Ad
-        fields = "__all__"
-
-
-class AdDetailSerializer(serializers.ModelSerializer):
-    author = serializers.SlugRelatedField(
-        required=False,
-        queryset=User.objects.all(),
-        slug_field="username"
-    )
-
-    category = serializers.SlugRelatedField(
-        required=False,
-        queryset=Category.objects.all(),
-        slug_field="name"
-    )
-
-    class Meta:
-        model = Ad
-        fields = "__all__"
-
-
-class AdCreateSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField(required=False)
-
-    class Meta:
-        model = Ad
-        fields = "__all__"
-
-
-class CategoryCreateSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField(required=False)
-
-    class Meta:
-        model = Category
-        fields = "__all__"
+from ads.models import Ad, Selection
+from ads.serializers.ad import AdListSerializer
 
 
 class SelectionListSerializer(serializers.ModelSerializer):

@@ -17,8 +17,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from ads import views_ad
-from authentication.viewset_location import LocationViewSet
+from ads.views import ad
+from authentication.views.viewset_location import LocationViewSet
 from skypro_home_work_27_31 import settings
 
 router = routers.SimpleRouter()
@@ -27,7 +27,7 @@ router.register('location', LocationViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('', views_ad.root_domain),
+    path('', ad.root_domain),
     path('', include('ads.urls')),
     path('', include('authentication.urls'))
 ]
