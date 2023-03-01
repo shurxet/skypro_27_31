@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'skypro_home_work_27_31.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'flask_app',
-        'USER': 'flask_app',
-        'PASSWORD': 'bWSUGD%PZfQnzgOFn20mD',
-        'HOST': '95.163.237.156',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'pg',
         'PORT': '5432'
     }
 }
