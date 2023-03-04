@@ -1,8 +1,8 @@
 version: "3.9"
 services:
   api:
-    build:
-      context: .
+ #   build:
+ #     context: .
     image: shurxet/django_app
     ports:
     - 80:80
@@ -13,17 +13,18 @@ services:
         condition: service_completed_successfully
     command: python manage.py runserver 0.0.0.0:80
   migrations:
-    build:
-      context: .
+ #   build:
+ #     context: .
     image: shurxet/django_app
     depends_on:
       pg:
         condition: service_healthy
     command: python manage.py migrate
+ #   command: ["sleep", "60s"]
 
 
   pg:
-    image: postgres:latest
+    image: postgres
 
     environment:
       POSTGRES_USER: postgres
@@ -32,9 +33,9 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - .\pg_data:/var/lib/postgresql/data
+      - ./pg_data:/var/lib/postgresql/data
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 20s
-      timeout: 20s
-      retries: 20
+      interval: 30s
+      timeout: 30s
+      retries: 30
