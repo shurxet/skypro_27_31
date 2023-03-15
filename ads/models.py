@@ -1,5 +1,8 @@
 from django.contrib.auth.models import AbstractUser
+from django.core.exceptions import ValidationError
+from django.core.validators import MinValueValidator, MinLengthValidator
 from django.db import models
+from rest_framework.validators import UniqueValidator
 
 from authentication.models import User
 
@@ -7,6 +10,7 @@ from authentication.models import User
 class Category(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(max_length=100)
+    slug = models.CharField(max_length=10, null=True, unique=True, validators=[MinLengthValidator(5)])
 
     class Meta:
         verbose_name = "Категория"
@@ -17,11 +21,11 @@ class Category(models.Model):
 
 
 class Ad(models.Model):
-    name = models.CharField(max_length=300)
+    name = models.CharField(max_length=300, validators=[MinLengthValidator(10)])
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     price = models.PositiveIntegerField()
     description = models.CharField(max_length=500, null=True)
-    is_published = models.BooleanField()
+    is_published = models.BooleanField(default=False)
     image = models.ImageField(upload_to='images/', null=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
 
